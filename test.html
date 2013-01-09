@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>html5bundle test</title>
+<!-- Styling -->
+    <style type=text/css>
+        body {
+           background:#fff;
+           color:#222;
+           /*margin:1em 0 2em 6em;*/
+           padding:0;
+        }
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="html5bundle.lib.js"></script>
+</head>
+<!-- Html -->
+<body>
+    <script type="text/javascript">
+    $(function() {
+        var w=Math.round($(window).width()*0.85),
+            h=Math.round($(window).height()*0.85)
+        //alert(w+'x'+h)
+        $('#game-container')
+            //.css({position: 'absolute'})
+            .width(w)
+            .height(h)
+        window.__DB = new html5bundle.Bundle()
+        window.__DB.start('h5b.txt', function(files) {
+            $('#progress-bar').remove()
+            window.__DB.files = files
+            for (var f in window.__DB.files) {
+			   $('#game-container').prepend ('<a href="#" rel="bfile">'+f+'</a> <br />' )
+			}
+			$('#game-container').prepend('<h2>Bundle Contents</h2> <em>(click to view) </em> <br /><br />')
+			$('a[rel="bfile"]').click(function() {
+                var f = $(this).text();
+                if (typeof window.__DB.files[f].play == 'function') window.__DB.files[f].play()
+                else if (window.__DB.files[f].src) $('#image').width(w).height(w*3/4).attr('src', window.__DB.files[f].src)
+                else alert(window.__DB.files[f])
+            })
+        })
+        $('#progress-bar').html('loading bundle ...')
+
+    });
+
+    </script>
+
+    <h1>HTML5BUNDLE Test Page</h1>
+    <p>
+    This page serves as an example of using the 
+    <a href="https://github.com/mohamed--abdel-maksoud/html5bundle">html5bundle</a>
+    library to decode data files. <br />
+    <strong>Credits</strong>:
+    audio was downloaded from
+    <a href="http://www.linnrecords.com/linn-downloads-testfiles.aspx">linnerecords.com</a>
+    and images from
+    <a href="http://www.public-domain-image.com">public-domain-image.com</a>
+    .
+    </p>
+    <div>
+        <div id="game-container">
+          <div id="progress-bar" >
+          </div>
+          <img id="image" style="margin: 2em;" />
+        </div>
+    </div>
+</body>
+</html>
+

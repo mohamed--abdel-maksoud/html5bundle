@@ -7,7 +7,7 @@
 WD=$PWD
 DIR=$1
 out=$2
-LZG_PATH=/home/mohamed/work/scratch/liblzg-1.0.6/src/tools/lzg    # download and install from http://liblzg.bitsnbites.eu/
+LZG_PATH=lzg    # download and install from http://liblzg.bitsnbites.eu/
 
 cd $DIR
 echo "** generating ogg versions of the mp3's"

@@ -17,12 +17,12 @@ Usage
    
 - Decoding bundles in your JavaScript app:
 
-  include `html5.min.js` (or `html5.lib.js`) in your HTML file then follow the template in `test.html`
+  include `html5bundle.min.js` (or `html5.lib.js`) in your HTML file then follow the template in `test.html`
 
 
 CREDITS
 -------
 html5bundle is developed on top of the following awesome libraries:
-- the tar decoder is based on the on from `bitjs` project http://code.google.com/p/bitjs/
+- the tar decoder is based on the one from `bitjs` project http://code.google.com/p/bitjs/
 - Base64 encoder was taken from Pedro Ladaria's javascript wave decoder http://codebase.es/riffwave/
 - Compression and decompression was supported by Marcus Geelnard's `liblzg` http://liblzg.bitsnbites.eu/

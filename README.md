@@ -8,6 +8,7 @@ Usage
   - Make sure you have the following software:
     1. liblzg (see CREDITS)
     2. Linux utilities: `tar`, `avconv`, `oggenc`, `base64`
+    3. Optionally the `yuicompressor`
   - Place all your bundle files in a directory, say $bundle_files_dir
   - execute
 
@@ -16,7 +17,7 @@ Usage
    
 - Decoding bundles in your JavaScript app:
 
-  check `test.html`
+  include `html5.min.js` (or `html5.lib.js`) in your HTML file then follow the template in `test.html`
 
 
 CREDITS

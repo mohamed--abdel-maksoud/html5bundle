@@ -2,6 +2,14 @@ html5bundle
 ===========
 Bundle all your web app data (game levels, images, audio, json, xml ...) files in a single file!
 
+Features
+---------
+- Single HTTP request to fetch all web app's assets
+- Supports text, xml, json, png, bmp, gif, mp3, ogg
+- The bundle maker script will create ogg versions of your mp3's for portability
+- Works on Firefox, Safari, and Chrome.
+
+
 Usage
 ------
 - Creating bundles:

@@ -30,7 +30,7 @@ Usage
 
 CREDITS
 -------
-html5bundle is developed on top of the following awesome libraries:
+html5bundle is developed on top of the following libraries:
 - the tar decoder is based on the one from `bitjs` project http://code.google.com/p/bitjs/
 - Base64 encoder was taken from Pedro Ladaria's javascript wave decoder http://codebase.es/riffwave/
 - Compression and decompression was supported by Marcus Geelnard's `liblzg` http://liblzg.bitsnbites.eu/

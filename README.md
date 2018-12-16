@@ -1,6 +1,6 @@
 html5bundle
 ===========
-Bundle all your web app data (game levels, images, audio, json, xml ...) files in a single file!
+Bundle all your web app data (game levels, images, audio, json, xml ...) files in a single file.
 
 Features
 ---------
